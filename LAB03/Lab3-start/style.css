@@ -1,0 +1,176 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  /*22520733 Bùi Quốc Lâm*/
+  font-family: "OpenSans";
+  src: url(./OpenSans-VariableFont_wdth\wght.ttf);
+}
+
+body {
+  font-family: "OpenSans", serif;
+}
+
+h1,
+h2 {
+  font-family: "OpenSans", sans-serif;
+}
+
+body {
+  /*22520733 Bùi Quốc Lâm*/
+  font-size: 10px; /* Phông chữ cho trang */
+  line-height: 1.6; /* Line-height */
+  letter-spacing: 0.02em; /* Khoảng cách giữa các chữ */
+  word-spacing: 0.05em; /* Khoảng cách giữa các từ */
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+}
+p {
+  font-size: 1rem;
+}
+ul,
+ol,
+li {
+  font-size: 1rem;
+}
+section h1 + p,
+section h2 + p {
+  text-indent: 20px;
+}
+
+a {
+  /*22520733 Bùi Quốc Lâm*/
+  color: #a66;
+}
+
+a:visited {
+  color: #a66;
+}
+
+a:focus {
+  color: #a66;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #c88;
+  text-decoration: none;
+}
+a:active {
+  color: #fff;
+  background-color: #a66;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+a[href^="http"]:not([href*="#"]) {
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
+
+ul,
+ol {
+  /*22520733 Bùi Quốc Lâm*/
+  margin: 1em 0;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+li {
+  margin-bottom: 0.5em;
+}
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+nav {
+  /*22520733 Bùi Quốc Lâm*/
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+nav li {
+  border: 2px solid #a66;
+  margin: 15px 50px;
+  padding: 15px;
+  cursor: pointer;
+  &:hover {
+    background-color: #a66;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: #a66;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+}
